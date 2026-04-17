@@ -5,46 +5,46 @@
 
 
 
-## 1. Projekt klonen
+## 1. Clone the project
 
-`git clone <URL-des-ursprungs-repo>`
+`git clone <url-of-origin-repo>`
 
-`cd <projektordner>`
+`cd <project-folder>`
 
-## 2. Bestehende Verbindung (Remote) entfernen
+## 2. Remove the existing remote connection
 
-Damit Sie nicht versehentlich Änderungen in das ursprüngliche Projekt pushen, müssen Sie den origin-Remote entfernen. 
+To avoid accidentally pushing changes to the original project, you need to remove the origin remote.
 
 `git remote remove origin`
 
-## 3. Neues Repository auf GitHub erstellen
-Gehen Sie auf GitHub und erstellen Sie ein neues, leeres Repository.
-Kopieren Sie die URL des neuen Repositorys (HTTPS oder SSH).
+## 3. Create a new repository on GitHub
+Go to GitHub and create a new, empty repository.
+Copy the URL of the new repository (HTTPS or SSH).
 
-## 4. Änderungen vornehmen 
-Bearbeiten Sie die Dateien im lokalen Ordner nach Ihren Wünschen. 
+## 4. Make changes
+Edit the files in the local folder as you wish.
 
-## 5. Neues Repository lokal initialisieren und pushen 
-Verknüpfen Sie das lokale Verzeichnis mit dem neuen Repository und laden Sie die Änderungen hoch: 
+## 5. Link and push to the new repository
+Connect the local directory to the new repository and upload the changes:
 
-Optional: Falls Sie den Branch umbenennen wollen (z.B. von master zu main):
+Optional: If you want to rename the branch (e.g. from master to main):
 
 `git branch -M main`
 
-Neuen Remote hinzufügen:
+Add the new remote:
 
-`git remote add origin <URL-des-neuen-repo>`
+`git remote add origin <url-of-new-repo>`
 
-Änderungen hinzufügen und committen
+Stage and commit changes:
 
 `git add .`
 
 
-`git commit -m "Erster Commit im neuen Repository"`
+`git commit -m "First commit in the new repository"`
 
 
 
-Änderungen hochladen
+Push changes:
 
 `git push -u origin main`
 
